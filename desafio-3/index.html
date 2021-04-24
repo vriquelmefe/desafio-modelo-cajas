@@ -12,112 +12,139 @@
         }
         
         .square {
-            height: 200px;
-            width: 300px;
-            margin: 10px;
+            height: 300px;
+            width: 500px;
+            margin: 40px;
+            float: left;
         }
         
-        .square__espana {
-            background-color: red;
+        .clear {
+            clear: both;
+        }
+        
+        .square__espana,
+        .square__dinamarca,
+        .square__emiratos,
+        .square__japon {
             border: 1px solid black;
-            float: left;
+            position: relative;
+            height: 100%;
+        }
+        
+        .rojo {
+            background-color: red;
+            height: 33.3%;
+        }
+        
+        .rojo2 {
+            background-color: red;
+            height: 33.3%;
         }
         
         .amarillo {
-            height: 90px;
             background-color: yellow;
-            z-index: 1;
-            margin-top: 55px;
+            height: 33.3%;
         }
         
-        .square__dinamarca {
+        .square__dinamarca,
+        .square__emiratos {
+            box-sizing: border-box;
             background-color: red;
-            border: 1px solid black;
-            float: left;
         }
         
         .linea-v {
-            height: 200px;
+            height: 300px;
             background-color: white;
             width: 20px;
-            margin-left: 90px;
+            margin-left: 120px;
         }
         
         .linea-h {
             height: 20px;
             background-color: white;
-            width: 300px;
+            width: 498px;
             position: absolute;
-            margin-top: -110px;
-        }
-        
-        .square__emiratos {
-            background-color: red;
-            border: 1px solid black;
-            clear: both;
-            float: left;
+            margin-top: -160px;
         }
         
         .verde {
             background-color: green;
-            width: 230px;
-            height: 70px;
-            margin-left: 70px;
+            width: 80%;
+            height: 33.3%;
+            margin-left: 20%;
             position: absolute;
         }
         
         .blanco {
             background-color: white;
-            width: 230px;
-            height: 70px;
-            margin-left: 70px;
-            margin-top: 70px;
+            width: 80%;
+            height: 34%;
+            margin-left: 20%;
+            margin-top: 99px;
             position: absolute;
         }
         
         .negro {
             background-color: black;
-            width: 230px;
-            height: 70px;
-            margin-left: 70px;
-            margin-top: 130px;
+            width: 80%;
+            height: 33.3%;
+            margin-left: 20%;
+            margin-top: 199px;
             position: absolute;
+        }
+        
+        .p-emiratos {
+            margin-top: 62%;
         }
         
         .square__japon {
             background-color: white;
-            border: 1px solid black;
-            position: relative;
-            left: 320px;
-            top: 235px;
         }
         
         .circule {
             background-color: red;
             border-radius: 50%;
-            height: 80px;
-            width: 80px;
-            margin-top: 65px;
-            margin-left: 110px;
+            height: 60%;
+            width: 35%;
+            margin-top: 15%;
+            margin-left: 30%;
+        }
+        
+        .p-japon {
+            margin-top: 11%;
         }
     </style>
 </head>
 
 <body>
-    <section class="square square__espana">
-        <div class="amarillo"></div>
+    <section class="square">
+        <div class="square__espana">
+            <div class="rojo"></div>
+            <div class="amarillo"></div>
+            <div class="rojo2"></div>
+            <p>España</p>
+        </div>
     </section>
-    <section class="square square__dinamarca">
-        <div class="linea-v"></div>
-        <div class="linea-h"></div>
+    <section class="square ">
+        <div class="square__dinamarca">
+            <div class="linea-v"></div>
+            <div class="linea-h"></div>
+            <p>Dinamarca</p>
+        </div>
     </section>
-    <section class="square square__emiratos">
-        <div class="verde"></div>
-        <div class="blanco"></div>
-        <div class="negro"></div>
+    <section class="square clear">
+        <div class="square__emiratos">
+            <div class="verde"></div>
+            <div class="blanco"></div>
+            <div class="negro"></div>
+            <p class="p-emiratos">Emiratos Árabes</p>
+        </div>
     </section>
-    <section class="square square__japon">
-        <div class="circule"></div>
+    <section class="square">
+        <div class="square__japon">
+            <div class="circule"></div>
+            <p class="p-japon">Japón</p>
+        </div>
     </section>
 
 </body>
